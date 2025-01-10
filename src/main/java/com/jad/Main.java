@@ -1,7 +1,11 @@
 package com.jad;
 
+import com.jad.pizzeria.Pizzeria;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Customer customer = new Customer();
+        Pizzeria pizzeria = Pizzeria.getInstance();
+        customer.eat(pizzeria);
     }
 }
