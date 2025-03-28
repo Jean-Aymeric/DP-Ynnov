@@ -3,7 +3,7 @@ package com.jad.data;
 import java.io.*;
 import java.util.Properties;
 
-public final class SamplesPropertiesConnector {
+final class SamplesPropertiesConnector implements ISamplesPropertiesConnector {
     private static final String FileName = "src/data/samples.properties";
     private static SamplesPropertiesConnector instance;
     private Properties properties = null;
@@ -51,6 +51,7 @@ public final class SamplesPropertiesConnector {
         return SamplesPropertiesConnector.instance;
     }
 
+    @Override
     public String getById(int id) {
         return this.properties.getProperty(String.valueOf(id));
     }

@@ -1,12 +1,12 @@
 package com.jad;
 
-import com.jad.data.SamplesPropertiesConnector;
+import com.jad.data.ProxySamplesPropertiesConnector;
 
 public class Client {
-    private final SamplesPropertiesConnector samples;
+    private final ProxySamplesPropertiesConnector samples;
 
     public Client() {
-        this.samples = SamplesPropertiesConnector.getInstance();
+        this.samples = new ProxySamplesPropertiesConnector();
     }
 
     public void work() {
