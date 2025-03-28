@@ -3,7 +3,6 @@ package com.jad.weapon.decorator;
 import com.jad.weapon.IWeapon;
 
 public enum WeaponDecorator {
-
     GoodQuality(weapon -> new GoodQuality(weapon)),
     BadQuality(weapon -> new BadQuality(weapon)),
     DrenchedInDragonBlood(weapon -> new DrenchedInDragonBlood(weapon)),
